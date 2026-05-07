@@ -1,0 +1,6 @@
+@JavisApi_HostAddress = http://localhost:5053
+
+GET {{JavisApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

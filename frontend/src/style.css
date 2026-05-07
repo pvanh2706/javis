@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-sienna: #c2652a;
+  --color-sienna-dark: #a0541f;
+  --color-linen: #faf5ee;
+  --color-rose: #8c3c3c;
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'EB Garamond', ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-linen text-stone-800 font-sans;
+  }
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
